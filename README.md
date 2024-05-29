@@ -10,12 +10,19 @@ TransFuse is an interpretable multi-omic graph neural network to identify multi-
 
 ## Installation
 The following libraries are required,
+
 Python >= 3.7
+
 pandas >= 1.2
-numpy >= 1.20 
+
+numpy >= 1.20
+
 PyTorch >= 0.5
+
 captum >= 0.3.0
+
 argparse >= 0.1.0
+
 sklearn >= 1.0.2
 
 
@@ -23,9 +30,13 @@ sklearn >= 1.0.2
 Prepare your multi-omic matrix data in .csv format. Each row should contain the multi-omic data of one participant, with columns representing the multi-omic features. The adjacency matrix should also be in .csv format, with rows and columns corresponding to the total number of multi-omic features. Place all input files in the same directory.
 
 To run the code, use one of the following commands in your terminal, specifying the path to your dataset folder and the desired training mode:
+
 $ python transfuse_main.py /path_to_your_dataset/ pretrain
+
 $ python transfuse_main.py /path_to_your_dataset/ baseline
+
 $ python transfuse_main.py /path_to_your_dataset/ transferweight
+
 $ python transfuse_main.py /path_to_your_dataset/ fine-tune
 
 
